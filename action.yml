@@ -1,0 +1,15 @@
+# action.yml
+name: 'NX CLI'
+description: 'NX cli and record the command output.'
+inputs:
+  args: # id of input
+    description: 'The nx arguments'
+    required: true
+outputs:
+  result: # id of output
+    description: 'The command output'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.args }}
