@@ -1,5 +1,7 @@
 # Container image that runs your code
-FROM node
+FROM node:10-alpine
+
+RUN apk add git
 
 RUN npm install -g @nrwl/cli
 
