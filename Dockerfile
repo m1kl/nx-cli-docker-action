@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM node:alpine
+FROM node
 
 RUN npm install -g @nrwl/cli
 
