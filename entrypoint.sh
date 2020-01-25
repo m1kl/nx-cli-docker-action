@@ -1,5 +1,6 @@
 #!/bin/sh -l
 
-echo "Running 'nx $1'"
-result=$(nx $1)
-echo ::set-output name=result::$result
+set -e
+
+echo "Running 'nx $*'"
+sh -c "result=$(nx $*); echo ::set-output name=result::$result"
