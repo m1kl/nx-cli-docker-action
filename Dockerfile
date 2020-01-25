@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM node:10-alpine
+FROM node:12-alpine
 
 RUN apk add git
 
