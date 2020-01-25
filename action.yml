@@ -3,7 +3,7 @@ name: 'NX CLI'
 description: 'NX cli and record the command output.'
 inputs:
   args: # id of input
-    description: 'The nx arguments'
+    description: 'The nx cli arguments'
     required: true
 outputs:
   result: # id of output
