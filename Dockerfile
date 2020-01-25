@@ -1,7 +1,7 @@
 # Container image that runs your code
 FROM node:alpine
 
-RUN npm install -g @nwrl/cli
+RUN npm install -g @nrwl/cli
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
